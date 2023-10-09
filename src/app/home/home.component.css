@@ -16,11 +16,10 @@
   .chatbot-container {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 40px;  
     width: 600px;
-    height: 700px;
     background-color: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(90, 54, 198, 0.3);
     border-radius: 5px;
     overflow: hidden;
     display: block;
@@ -49,8 +48,8 @@
     border: none;
   }
   .chat-icon {
-    width: 150px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     background-color: transparent;
     border: none; /* Remove any border */
     padding: 0; /* Remove any padding */
@@ -59,6 +58,7 @@
   /* Custom CSS for the image slider */
 #image-slider {
   width: 100%;
+  position: relative;
   display: flex;
 }
 
@@ -67,7 +67,17 @@
   flex-shrink: 0;
 }
 
+.slide1 {
+  width: 100%;
+  flex-shrink: 0;
+}
 .slide img {
   width: 100%;
-  height: 650px;
+  height:600px;
+}
+
+.slide1 img {
+  margin-left: 160px;
+  width: 65%;
+  height:600px;
 }

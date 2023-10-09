@@ -66,13 +66,3 @@
   margin: 0;
 }
 
-.custom-navbar-nav li {
-  flex-grow: 1;
-  text-align: center;
-  padding: 10px;
-}
-
-.custom-navbar-nav a {
-  color: antiquewhite;
-  text-decoration: none;
-}
