@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   private currentIndex = 0;
   private readonly interval = 8000; // 2 seconds
-
+  chatbotIframeSrc='https://web.powerva.microsoft.com/environments/Default-0da2a83b-13d9-4a35-965f-ec53a220ed9d/bots/cr09e_yBot/webchat?__version__=2';
   constructor() { }
-
+  
   ngOnInit(): void {
     setInterval(() => {
       this.nextSlide();
@@ -32,7 +32,4 @@ export class HomeComponent implements OnInit {
   toggleChatbot() {
     this.isClosed = !this.isClosed;
   }
-
- 
-  
 }

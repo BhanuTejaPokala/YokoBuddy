@@ -1,8 +1,9 @@
-    <!-- First Row of Buttons -->
-    <div class="row" style="margin-bottom: 20px;">
-      <div class="button-container" style="display: flex; flex-wrap: wrap;">
-          <button class="button" style=" padding: 10px 250px; margin: 5px; font-size: 16px; background-color: #3498db; color: #fff; border: none; cursor: pointer;">Find</button>
-          <button class="button" style=" padding: 10px 200px; margin: 5px; font-size: 16px; background-color: #3498db; color: #fff; border: none; cursor: pointer;">Employee</button>
-      </div>
-  </div>
+<div class="chatbot-icon" [ngClass]="{ 'closed': isClosed }" (click)="toggleChatbot()" title="YChat Bot">
+  <img   src="https://rgopenai951a.blob.core.windows.net/image/botIcon.png" alt="Chat Icon" class="chat-icon" style="width: 75px; height: 75px; position: absolute; bottom: 0; right: 0;">
+  <!-- src="https://web-material3.yokogawa.com/1/10029/tabs/trademark.jpg" -->
+</div>
 
+<div class="chatbot-container" [ngClass]="{ 'closed': isClosed }">
+  <button class="minimize-button" (click)="toggleChatbot()"><i class="fa fa-window-minimize"></i></button>
+  <iframe src="https://web.powerva.microsoft.com/environments/Default-0da2a83b-13d9-4a35-965f-ec53a220ed9d/bots/cr09e_yBot/webchat" frameborder="0" style="height: 610px;"></iframe>       
+</div>  
