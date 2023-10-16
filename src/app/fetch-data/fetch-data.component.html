@@ -1,9 +1,12 @@
-<div class="chatbot-icon" [ngClass]="{ 'closed': isClosed }" (click)="toggleChatbot()" title="YChat Bot">
-  <img   src="https://rgopenai951a.blob.core.windows.net/image/botIcon.png" alt="Chat Icon" class="chat-icon" style="width: 75px; height: 75px; position: absolute; bottom: 0; right: 0;">
+
+<div class="chatbot-icon" [ngClass]="{ 'closed': isClosed }" (click)="toggleChatbot()" title="Y-ChatGPT">
+  <img   src="https://rgopenai951a.blob.core.windows.net/image/botIcon.png" alt="Chat Icon" class="chat-icon" style="width: 75px; height: 75px; position: absolute; bottom: 25px; right: 30px;">
   <!-- src="https://web-material3.yokogawa.com/1/10029/tabs/trademark.jpg" -->
 </div>
 
-<div class="chatbot-container" [ngClass]="{ 'closed': isClosed }">
+<div class="chatbot-container" [ngClass]="{ 'closed': isClosed }" >
+  <app-counter-component></app-counter-component>
+  
   <button class="minimize-button" (click)="toggleChatbot()"><i class="fa fa-window-minimize"></i></button>
-  <iframe src="https://web.powerva.microsoft.com/environments/Default-0da2a83b-13d9-4a35-965f-ec53a220ed9d/bots/cr09e_yBot/webchat" frameborder="0" style="height: 610px;"></iframe>       
-</div>  
+  <iframe id="chatbot-iframe" src="https://web.powerva.microsoft.com/environments/Default-0da2a83b-13d9-4a35-965f-ec53a220ed9d/bots/cr09e_yBot/webchat" frameborder="0" style="height: 610px;"></iframe>
+</div>

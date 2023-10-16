@@ -10,11 +10,9 @@
     overflow: hidden;
     display: block;
   }
-  
   .chatbot-container.closed {
     display: none;
-  }
-  
+  }  
   /* Minimize Button */
   .minimize-button {
     position: absolute;
@@ -25,8 +23,7 @@
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-  }
-  
+  }  
   /* Iframe */
   .chatbot-container iframe {
     width: 100%;
@@ -41,3 +38,5 @@
     padding: 0; /* Remove any padding */
     margin: 0; /* Remove any margin */
   }
+  /* Bottttt */
+ 
